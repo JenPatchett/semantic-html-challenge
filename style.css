@@ -12,13 +12,14 @@ h1 {
 }
 
 table {
+  table-layout: fixed;
   width: 100%;
   border: 2px solid #800080;
   border-collapse: collapse;
 }
 
 thead, tfoot {
-  font-size: 16px;
+  font-size: 14px;
   font-family: 'Rock Salt', cursive;
   color: #fff;
   border: 2px solid #800080;
@@ -28,7 +29,7 @@ thead tr, tfoot tr {
   background: linear-gradient(rgba(0,0,0,0.1),  rgba(0,0,0,0.5)), url("./assets/leopardskin.jpg");
 }
 
-thead td, tfoot td {
+thead th, tfoot th {
   border: 2px solid #800080;
   font-size: 12px;
 }
@@ -36,6 +37,10 @@ thead td, tfoot td {
 tbody tr {
   background: url("./assets/noise.png");
 }
+
+/* th {
+  width: fit-content;
+} */
 
 th, td {
   text-align: center;
@@ -52,7 +57,15 @@ tr:nth-child(even) {
 
 caption {
   font-family: 'Rock Salt', cursive;
+  font-style: italic;
+  color: grey;
   text-align: right;
   caption-side: bottom;
   padding-top: 15px;
+  margin-right: 20px;
+}
+
+.total-albums {
+  font-family: "Benton Sans", "Helvetica Neue", helvetica, arial, sans-serif;
+  font-size: 16px;
 }
