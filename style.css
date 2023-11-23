@@ -3,7 +3,7 @@
 body {
   font-family: "Benton Sans", "Helvetica Neue", helvetica, arial, sans-serif;
   /* margin: 2em; */
-  font-size: 16px;
+  font-size: 14px;
 }
 
 h1 {
@@ -29,9 +29,14 @@ thead tr, tfoot tr {
   background: linear-gradient(rgba(0,0,0,0.1),  rgba(0,0,0,0.5)), url("./assets/leopardskin.jpg");
 }
 
-thead th, tfoot th {
+thead th {
   border: 2px solid #800080;
-  font-size: 12px;
+  font-size: 10px;
+}
+
+tfoot th {
+  border-right: 2px solid #800080;
+  font-size: 10px;
 }
 
 tbody tr {
@@ -65,7 +70,23 @@ caption {
   margin-right: 20px;
 }
 
-.total-albums {
+/* #col-band {
+  width: 80px;
+} */
+
+/* #col-year-formed {
+  width: 50px;
+}
+
+#col-number-of-albums {
+  width: 50;
+}
+
+#col-most-famous-song {
+  width: 35%;
+} */
+
+#total-albums {
   font-family: "Benton Sans", "Helvetica Neue", helvetica, arial, sans-serif;
-  font-size: 16px;
+  font-size: 14px;
 }
