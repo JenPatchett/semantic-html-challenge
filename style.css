@@ -38,6 +38,7 @@ thead th {
 
 tfoot th {
   border-right: 2px solid #800080;
+  text-align: right;
 }
 
 tbody tr {
@@ -71,16 +72,13 @@ caption {
   margin-right: 20px;
 }
 
-#total-albums {
+#total-no-of-albums {
   font-family: "Benton Sans", "Helvetica Neue", helvetica, arial, sans-serif;
+  text-align: left;
 }
 
 tr td:first-child {
   width: 350px;
-}
-
-tr td:nth-child(2) {
-  width: 250px;
 }
 
 tr td:last-child {
