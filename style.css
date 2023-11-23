@@ -3,7 +3,7 @@
 body {
   font-family: "Benton Sans", "Helvetica Neue", helvetica, arial, sans-serif;
   /* margin: 2em; */
-  font-size: 16px;
+  font-size: 14px;
 }
 
 h1 {
@@ -12,7 +12,10 @@ h1 {
 }
 
 table {
-  table-layout: fixed;
+  /* Although instructions said to use table-layout: fixed  */
+  /* it seems to not allow individal cols to be resized so commented out for now */
+
+  /* table-layout: fixed; */ 
   width: 100%;
   border: 2px solid #800080;
   border-collapse: collapse;
@@ -41,9 +44,9 @@ tbody tr {
   background: url("./assets/noise.png");
 }
 
-/* th {
+th {
   width: fit-content;
-} */
+}
 
 th, td {
   text-align: center;
@@ -68,22 +71,18 @@ caption {
   margin-right: 20px;
 }
 
-/* #col-band {
-  width: 80px;
-} */
-
-/* #col-year-formed {
-  width: 50px;
-}
-
-#col-number-of-albums {
-  width: 50;
-}
-
-#col-most-famous-song {
-  width: 35%;
-} */
-
 #total-albums {
   font-family: "Benton Sans", "Helvetica Neue", helvetica, arial, sans-serif;
+}
+
+tr td:first-child {
+  width: 350px;
+}
+
+tr td:nth-child(2) {
+  width: 250px;
+}
+
+tr td:last-child {
+  width: 400px;
 }
