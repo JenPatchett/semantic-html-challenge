@@ -3,7 +3,7 @@
 body {
   font-family: "Benton Sans", "Helvetica Neue", helvetica, arial, sans-serif;
   /* margin: 2em; */
-  font-size: 16px;
+  font-size: 14px;
 }
 
 h1 {
@@ -12,7 +12,10 @@ h1 {
 }
 
 table {
-  table-layout: fixed;
+  /* Although instructions said to use table-layout: fixed  */
+  /* it seems to not allow individal cols to be resized so commented out for now */
+
+  /* table-layout: fixed; */ 
   width: 100%;
   border: 2px solid #800080;
   border-collapse: collapse;
@@ -29,18 +32,22 @@ thead tr, tfoot tr {
   background: linear-gradient(rgba(0,0,0,0.1),  rgba(0,0,0,0.5)), url("./assets/leopardskin.jpg");
 }
 
-thead th, tfoot th {
+thead th {
   border: 2px solid #800080;
-  font-size: 12px;
+}
+
+tfoot th {
+  border-right: 2px solid #800080;
+  text-align: right;
 }
 
 tbody tr {
   background: url("./assets/noise.png");
 }
 
-/* th {
+th {
   width: fit-content;
-} */
+}
 
 th, td {
   text-align: center;
@@ -65,7 +72,15 @@ caption {
   margin-right: 20px;
 }
 
-.total-albums {
+#total-no-of-albums {
   font-family: "Benton Sans", "Helvetica Neue", helvetica, arial, sans-serif;
-  font-size: 16px;
+  text-align: left;
+}
+
+tr td:first-child {
+  width: 350px;
+}
+
+tr td:last-child {
+  width: 400px;
 }
