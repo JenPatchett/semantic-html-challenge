@@ -3,7 +3,7 @@
 body {
   font-family: "Benton Sans", "Helvetica Neue", helvetica, arial, sans-serif;
   /* margin: 2em; */
-  font-size: 14px;
+  font-size: 16px;
 }
 
 h1 {
@@ -31,12 +31,10 @@ thead tr, tfoot tr {
 
 thead th {
   border: 2px solid #800080;
-  font-size: 10px;
 }
 
 tfoot th {
   border-right: 2px solid #800080;
-  font-size: 10px;
 }
 
 tbody tr {
@@ -88,5 +86,4 @@ caption {
 
 #total-albums {
   font-family: "Benton Sans", "Helvetica Neue", helvetica, arial, sans-serif;
-  font-size: 14px;
 }
