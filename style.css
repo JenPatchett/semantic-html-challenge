@@ -1,5 +1,3 @@
-/* CSS files add styling rules to your content */
-
 body {
   font-family: "Benton Sans", "Helvetica Neue", helvetica, arial, sans-serif;
   margin: 2em;
@@ -7,8 +5,8 @@ body {
 }
 
 table {
-  /* Although the instructions said to use table-layout: fixed  */
-  /* it seems to not allow individal cols to be resized so using auto instead */
+  /* Although the instructions said to use [table-layout: fixed]  */
+  /* it seems to not allow individal cols to be resized so using [auto] instead */
 
   table-layout: auto; 
   width: 100%;
@@ -23,6 +21,7 @@ thead, tfoot {
   border: 2px solid #800080;
 }
 
+/* Add image as background with colour gradient in table header and footer */
 thead tr, tfoot tr {
   background: linear-gradient(rgba(0,0,0,0.1),  rgba(0,0,0,0.5)), url("./assets/leopardskin.jpg");
 }
@@ -36,6 +35,7 @@ tfoot th {
   text-align: right;
 }
 
+/* Add fuzzy/noise effect to table body rows */
 tbody tr {
   background: url("./assets/noise.png");
 }
@@ -49,12 +49,24 @@ th, td {
   padding: 15px;
 }
 
+/* Apply background colour to all odd rows */
 tr:nth-child(odd) {
   background-color: #ff33cc;
 }
 
+/* Apply background colour to all even rows */
 tr:nth-child(even) {
   background-color: #e495e4;
+}
+
+/* Set width of first col */
+tr td:first-child {
+  width: 350px;
+}
+
+/* Set width of last col */
+tr td:last-child {
+  width: 400px;
 }
 
 caption {
@@ -67,15 +79,8 @@ caption {
   margin-right: 20px;
 }
 
+/* Font styling to match table body font and align left to match text in TCG task image */
 #total-no-of-albums {
   font-family: "Benton Sans", "Helvetica Neue", helvetica, arial, sans-serif;
   text-align: left;
-}
-
-tr td:first-child {
-  width: 350px;
-}
-
-tr td:last-child {
-  width: 400px;
 }
