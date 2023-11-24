@@ -6,7 +6,7 @@ body {
 
 table {
   /* Although the instructions said to use [table-layout: fixed]  */
-  /* it seems to not allow individal cols to be resized so using [auto] instead */
+  /* it seems to not allow individual cols to be resized so using [auto] instead */
 
   table-layout: auto; 
   width: 100%;
