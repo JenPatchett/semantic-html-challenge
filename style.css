@@ -1,20 +1,50 @@
 body {
   font-family: "Benton Sans", "Helvetica Neue", helvetica, arial, sans-serif;
-  margin: 2em;
+  margin: auto;
+  display: block;
+  padding: 20px;
   font-size: 14px;
+  max-width: 1300px;
+}
+
+.heading {
+  text-align: center;
+  padding: 0 0 20px 0;
+}
+
+h1 {
+  font-size: 40px;
+}
+
+h2 {
+  font-size: 30px;
+  text-align: center;
+}
+
+h3 {
+  font-size: 24px;
+  text-align: center;
+}
+
+.table-img {
+  display: block;
+  margin: 20px auto 40px;
+  height: auto;
+  max-width: 100%;
 }
 
 table {
   /* Although the instructions said to use [table-layout: fixed]  */
   /* it seems to not allow individual cols to be resized so using [auto] instead */
 
-  table-layout: auto; 
+  table-layout: auto;
   width: 100%;
   border: 2px solid #800080;
   border-collapse: collapse;
 }
 
-thead, tfoot {
+thead,
+tfoot {
   font-size: 14px;
   font-family: 'Rock Salt', cursive;
   color: #fff;
@@ -22,8 +52,9 @@ thead, tfoot {
 }
 
 /* Add image as background with colour gradient in table header and footer */
-thead tr, tfoot tr {
-  background: linear-gradient(rgba(0,0,0,0.1),  rgba(0,0,0,0.5)), url("./assets/leopardskin.jpg");
+thead tr,
+tfoot tr {
+  background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.5)), url("./assets/leopardskin.jpg");
 }
 
 thead th {
@@ -44,7 +75,8 @@ th {
   width: fit-content;
 }
 
-th, td {
+th,
+td {
   text-align: center;
   padding: 15px;
 }
@@ -83,4 +115,9 @@ caption {
 #total-no-of-albums {
   font-family: "Benton Sans", "Helvetica Neue", helvetica, arial, sans-serif;
   text-align: left;
+}
+
+footer {
+  text-align: center;
+  margin: 50px auto 40px;
 }

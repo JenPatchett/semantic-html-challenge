@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>HTML/CSS Table Challenge</title>
+    <title>Jen Patchett - Semantic HTML and CSS Challenge</title>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    
+
     <!-- import the webpage's stylesheet -->
     <link rel="stylesheet" href="./style.css">
 
@@ -14,77 +14,95 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap" rel="stylesheet">
 
-  </head>  
+  </head>
   <body>
-    <table>
-      <thead>
-        <tr>
-          <th>Band</th>
-          <th>Year Formed</th>
-          <th>No. of Albums</th>
-          <th>Most Famous Song</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <th>Buzzcocks</th>
-          <td>1976</td>
-          <td>9</td>
-          <td>Ever Fallen in Love (With Someone You Shouldn't've)</td>
-        </tr>
-        <tr>
-          <th>The Clash</th>
-          <td>1976</td>
-          <td>9</td>
-          <td>London Calling</td>
-        </tr>
-        <tr>
-          <th>The Damned</th>
-          <td>1976</td>
-          <td>10</td>
-          <td>Smash It Up</td>
-        </tr>
-        <tr>
-          <th>Sex Pistols</th>
-          <td>1975</td>
-          <td>1</td>
-          <td>Anarchy in the UK</td>
-        </tr>
-        <tr>
-          <th>Sham 69</th>
-          <td>1976</td>
-          <td>13</td>
-          <td>If the Kids Are United</td>
-        </tr>
-        <tr>
-          <th>Siouxsie and the Banshees</th>
-          <td>1976</td>
-          <td>11</td>
-          <td>Hong Kong Garden</td>
-        </tr>
-        <tr>
-          <th>Stiff Little Fingers</th>
-          <td>1977</td>
-          <td>10</td>
-          <td>Suspect Device</td>
-        </tr>
-        <tr>
-          <th>The Stranglers</th>
-          <td>1974</td>
-          <td>17</td>
-          <td>No More Heroes</td>
-        </tr>
-      </tbody>
-      <tfoot>
-        <tr>
-          <td></td>
-          <th>Total Albums</th>
-          <td id="total-no-of-albums">77</td>
-          <td></td>
-        </tr>
-      </tfoot>
-      <caption>A summary of the UK's most famous punk bands</caption>
-    </table>
+    <section class="heading">
+      <h1>Jen Patchett</h1>
+      <h2>Semantic HTML and CSS Challenge</h2>
+      <p>A challenge set by The Coders Guild during week 2 of the Skills Bootcamp in Web Design and Development course (Nov 2023) to create a copy of the table in the image below using HTML and CSS.</p>
+    </section>
+
+    <section>
+      <h3>The Table to Replicate</h3>
+      <img class="table-img" src="https://camo.githubusercontent.com/94d9f0d28338cf51199677163c10bee313b228c59f1e345aa9f20d6458a20fcf/68747470733a2f2f63646e2e676c697463682e636f6d2f38623162656163632d393337632d343037322d393364362d346165383235616231613761253246696d6167655f302e706e673f31353237373631393135363039" alt="Screenshot of a pink nd purple striped table of information listing 8 famous UK punk bands and data including year formed, number of albums and most famous song.">
+    </section>
+
+    <section style="overflow-x:auto;">
+      <h3>The Table I Created</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>Band</th>
+            <th>Year Formed</th>
+            <th>No. of Albums</th>
+            <th>Most Famous Song</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th>Buzzcocks</th>
+            <td>1976</td>
+            <td>9</td>
+            <td>Ever Fallen in Love (With Someone You Shouldn't've)</td>
+          </tr>
+          <tr>
+            <th>The Clash</th>
+            <td>1976</td>
+            <td>9</td>
+            <td>London Calling</td>
+          </tr>
+          <tr>
+            <th>The Damned</th>
+            <td>1976</td>
+            <td>10</td>
+            <td>Smash It Up</td>
+          </tr>
+          <tr>
+            <th>Sex Pistols</th>
+            <td>1975</td>
+            <td>1</td>
+            <td>Anarchy in the UK</td>
+          </tr>
+          <tr>
+            <th>Sham 69</th>
+            <td>1976</td>
+            <td>13</td>
+            <td>If the Kids Are United</td>
+          </tr>
+          <tr>
+            <th>Siouxsie and the Banshees</th>
+            <td>1976</td>
+            <td>11</td>
+            <td>Hong Kong Garden</td>
+          </tr>
+          <tr>
+            <th>Stiff Little Fingers</th>
+            <td>1977</td>
+            <td>10</td>
+            <td>Suspect Device</td>
+          </tr>
+          <tr>
+            <th>The Stranglers</th>
+            <td>1974</td>
+            <td>17</td>
+            <td>No More Heroes</td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr>
+            <td></td>
+            <th>Total Albums</th>
+            <td id="total-no-of-albums">77</td>
+            <td></td>
+          </tr>
+        </tfoot>
+        <caption>A summary of the UK's most famous punk bands</caption>
+      </table>
+    </section>
+
+    <footer>
+      <p>&copy Jen Patchett, 2023</p>
+    </footer>
 
     <!-- include the Glitch button to show what the webpage is about and
           to make it easier for folks to view source and remix -->
